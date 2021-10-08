@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script>
+      // Called on body's `onload` event
+      function init() {
+        // Retrieving the text input's value which was stored into localStorage
+        var firstname = localStorage.getItem('firstname');
+        var lastname = localStorage.getItem('lastname');
+        var superpower = localStorage.getItem('powers');
+        var email = localStorage.getItem('email');
+        var area = localStorage.getItem('area');
+        var phone = localStorage.getItem('phone');
+        var subject = localStorage.getItem('subject');
+        var yes = localStorage.getItem('yes');
+        var no = localStorage.getItem('no');
+
+        // Writing the value in the document
+        document.write('first name = ' + firstname);
+        document.write('last name = ' + lastname);
+        document.write('powers = ' + superpower);
+        document.write('email = ' + email);
+        document.write('area = ' + area);
+        document.write('phone = ' + phone);
+        document.write('subject = ' + subject);
+        document.write('yes = ' + yes);
+        document.write('no = ' + no);
+      }
+    </script>
+  </head>
+  <body onload="init();"></body>
+</html>

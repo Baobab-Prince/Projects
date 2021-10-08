@@ -1,0 +1,148 @@
+/* =================== Google Fonts Links ================== */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap');
+
+/* ======================================================= */
+/* ================= Css Styling below =================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #202020;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+/* ==================================================== */
+/* =================== NavBar Styling ================= */
+
+.nav {
+  width: 100%;
+  height: 50px;
+  background: #202020;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: 'Comfortaa', cursive;
+}
+
+nav {
+  height: 45px;
+  width: 85%;
+  background: #202020;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  box-shadow: 0px 4px 2px -2px #fff;
+  border-radius: 3px;
+}
+
+.left,
+.right {
+  margin: 4px 0;
+}
+
+#logo {
+  transform: translate(0, 17px);
+}
+
+.left > a,
+.right > a {
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+}
+
+.nav-links {
+  margin: 0px 1rem;
+  padding: 7px 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links:hover {
+  background: white;
+  color: black;
+  border-radius: 5px;
+}
+
+/* ==================== NavBar Ends ================= */
+/* ================================================== */
+
+/* ================= Card Section =================== */
+
+.card-holder {
+  width: 94%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 10px 30px;
+  background: tan;
+  border-radius: 10px;
+}
+
+.card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin: 15px 15px;
+  text-align: center;
+}
+
+.card .card-image img {
+  width: 230px;
+  border-radius: 10px;
+  z-index: 5;
+  transition: 0.3s;
+  box-shadow: 4px 4px 7px -2px rgb(65, 65, 65);
+  clip-path: polygon(13% 0, 100% 0, 100% 90%, 87% 100%, 0 100%, 0 10%);
+}
+
+.card .card-holder:hover {
+  background: red;
+  filter: drop-shadow(2px 3px 5px black);
+}
+
+.card > .title {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 700;
+  color: rgb(70, 70, 70);
+  padding: 0px 15px;
+  font-size: 18px;
+  cursor: default;
+  transition: 0.2s;
+  transform: translateY(-15px);
+}
+
+.card > .know-more {
+  width: 150px;
+  padding: 5px 0;
+  background: red;
+  clip-path: polygon(8% 0, 100% 0, 100% 70%, 92% 100%, 0 100%, 0 30%);
+  transform: translateY(-20px);
+}
+
+.card > .know-more > a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+.card:hover > .title {
+  color: red;
+}
+
+/* =================== ScrollBar Settings =================== */
+::-webkit-scrollbar {
+  width: 0px;
+}

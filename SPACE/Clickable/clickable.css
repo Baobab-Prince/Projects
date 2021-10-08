@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 780px;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font: italic bold 2em, Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: green;
+  font-size: 20px;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+  border-right: 1px solid #bbb;
+  display: inline;
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+audio {
+  padding: 65px;
+  margin: 3px;
+}

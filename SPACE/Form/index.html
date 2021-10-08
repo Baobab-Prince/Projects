@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function results() {
+        var firstname = document.getElementById('first_name').value;
+        var lastname = document.getElementById('last_name').value;
+        var superpower = document.getElementById('powers').value;
+        var email = document.getElementById('email').value;
+        var area = document.getElementById('area').value;
+        var phone = document.getElementById('phone').value;
+        var option = document.getElementById('option').value;
+        var radio = document.getElementById('radio').value;
+        localStorage.setItem('firstname', firstname);
+        localStorage.setItem('lastname', lastname);
+        localStorage.setItem('superpower', superpower);
+        localStorage.setItem('email', email);
+        localStorage.setItem('area', area);
+        localStorage.setItem('phone', phone);
+        localStorage.setItem('option', option);
+        localStorage.setItem('radio', radio);
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="regform"><h1>Registration Form</h1></div>
+    <div class="main">
+      <form action="results.html" name="myform" onsubmit="results();">
+        <div id="name">
+          <h2 class="name">Name</h2>
+          <input class="firstname" type="text" id="first_name" name="first_name" /><br />
+          <label class="firstlabel">First Name</label>
+          <input class="lastname" type="text" id="last_name" name="last_name" />
+          <label class="lastlabel">Last Name</label>
+        </div>
+
+        <h2 class="name">Super Power</h2>
+        <input class="powers" type="text" id="powers" name="powers" />
+
+        <h2 class="name">Email</h2>
+        <input class="email" type="text" id="email" name="email" />
+
+        <h2 class="name">Phone</h2>
+        <input class="code" type="text" id="area_code" name="area_code" />
+        <label class="area-code">Area Code</label>
+        <input class="number" type="text" id="phone" name="phone" />
+        <label class="phone-number">Phone Number</label>
+
+        <h2 class="name">What Planet Are You From?</h2>
+        <select class="option" id="subject" name="subject">
+          <option disabled="disabled" selected="selected">
+            --Choose Option
+          </option>
+          <option>Mercury</option>
+          <option>Venus</option>
+          <option>Earth</option>
+          <option>Mars</option>
+          <option>Jupiter</option>
+          <option>Saturn</option>
+          <option>Uranus</option>
+          <option>Neptune</option>
+        </select>
+        <h2 id="student">Would You Like to Live on Another Planet?</h2>
+        <label class="radio">
+          <input class="radio-one" type="radio" checked="checked" id="yes" />
+          <span class="checkmark"></span>
+          Yes
+        </label>
+        <label class="radio">
+          <input class="radio-two" type="radio" id="" />
+          <span class="checkmark"></span>
+          No
+        </label>
+
+        <input type="submit" value="Submit">Submit</input>
+      </form>
+    </div>
+  </body>
+</html>

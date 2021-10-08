@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <script>
+      function init() {
+        var firstname = localStorage.getItem('firstname');
+        var lastname = localStorage.getItem('lastname');
+        var superpower = localStorage.getItem('powers');
+        var email = localStorage.getItem('email');
+        var area = localStorage.getItem('area');
+        var phone = localStorage.getItem('phone');
+        var option = localStorage.getItem('option');
+        var radio = localStorage.getItem('radio');
+        // Writing the value in the document
+        document.write('passed value = ' + firstname);
+        document.write('passed value = ' + lastname);
+        document.write('passed value = ' + superpower);
+        document.write('passed value = ' + email);
+        document.write('passed value = ' + area);
+        document.write('passed value = ' + phone);
+        document.write('passed value = ' + option);
+        document.write('passed value = ' + radio);
+      }
+    </script>
+  </head>
+
+  <body onload="init();">
+    <p>This is the destination/results page</p>
+  </body>
+</html>

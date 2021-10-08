@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+      // Called on form's `onsubmit`
+      function tosubmit() {
+        // Getting the value of your text input
+        var firstname = document.getElementById('first_name').value;
+        var lastname = document.getElementById('last_name').value;
+        var superpower = document.getElementById('powers').value;
+        var email = document.getElementById('email').value;
+        var area = document.getElementById('area').value;
+        var phone = document.getElementById('phone').value;
+        var subject = document.getElementById('subject').value;
+        var yes = document.getElementById('yes').value;
+        var no = document.getElementById('no').value;
+
+        // Storing the value above into localStorage
+        localStorage.setItem('firstname', firstname);
+        localStorage.setItem('lastname', lastname);
+        localStorage.setItem('powers', superpower);
+        localStorage.setItem('email', email);
+        localStorage.setItem('area', area);
+        localStorage.setItem('phone', phone);
+        localStorage.setItem('subject', subject);
+        localStorage.setItem('yes', yes);
+        localStorage.setItem('no', no);
+
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- INLCUDING `ONSUBMIT` EVENT + ACTION URL -->
+    <div class="regform"><h1>Registration Form</h1></div>
+    <div class main>
+      <form name="myform" onsubmit="tosubmit();" action="results.html">
+        <div id="name">
+          <h2 class="name">Name</h2>
+
+          <input
+            class="firstname"
+            type="text"
+            id="first_name"
+            name="first_name"
+          /><br />
+          <label class="firstlabel">First Name</label>
+
+          <input
+            class="lastname"
+            type="text"
+            id="last_name"
+            name="last_name"
+            required
+          />
+          <label class="lastlabel">Last Name</label>
+          <h2 class="name">Super Power</h2>
+          <input class="powers" type="text" id="powers" name="powers" />
+          <h2 class="name">Email</h2>
+          <input class="email" type="text" id="email" name="email" />
+          <h2 class="name">Phone</h2>
+          <input class="area" type="text" id="area" name="area" minlength="3" />
+          <label class="area-code">Area Code</label>
+          <input class="number" type="text" id="phone" name="phone" />
+          <label class="phone-number">Phone Number</label>
+          <h2 class="name">What Planet Are You From?</h2>
+          <select class="option" id="subject" name="subject">
+            <option disabled="disabled" selected="selected">
+              --Choose Option
+            </option>
+            <option>Mercury</option>
+            <option>Venus</option>
+            <option>Earth</option>
+            <option>Mars</option>
+            <option>Jupiter</option>
+            <option>Saturn</option>
+            <option>Uranus</option>
+            <option>Neptune</option>
+          </select>
+          <h2 id="student">Would You Like to Live on Another Planet?</h2>
+          <label class="radio">
+            <input
+              class="radio-one"
+              type="radio"
+              name="Live"
+              id="yes"
+              checked="checked"
+            />
+            <span class="checkmark"></span>
+            Yes
+          </label>
+          <label class="radio">
+            <input class="radio-two" type="radio" name="Live" id="no" />
+            <span class="checkmark"></span>
+            No
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
