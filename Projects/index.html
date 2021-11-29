@@ -5,85 +5,205 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LEVEL 2 FINAL PROJECT | MINI-PROJECTS</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min (15).css" />
   </head>
 
   <body>
     <!-- ===================== NavBar Starts from here====================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
 
-    <div class="nav">
-      <nav>
-        <!-- ========== Nav Links on Left ============ -->
-        <div class="left">
-          <a href="../index.html" class="nav-links">HOME</a>
-
-          <a href="https://github.com/Baobab-Prince" class="nav-links"
-            >GitHub</a
-          >
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Baobab-Prince"
+                >GitHub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/BaobabPrince"
+                >Twitter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/baobabprince/"
+                tabindex="-1"
+                aria-disabled="true"
+                >Instagram</a
+              >
+            </li>
+          </ul>
         </div>
-
-        <!-- ======= Nav Links on Right ========= -->
-        <div class="right">
-          <a href="https://twitter.com/BaobabPrince" class="nav-links"
-            >TWITTER</a
-          >
-
-          <a href="https://www.instagram.com/baobabprince/" class="nav-links"
-            >INSTAGRAM</a
-          >
-        </div>
-      </nav>
-    </div>
-
+      </div>
+    </nav>
     <!-- ================== NavBar Ends ========================== -->
 
     <!-- ========================== Project Cards ======================== -->
-
-    <div class="card-holder">
-      <div class="card">
-        <div class="card-image">
-          <img src="../Projects/img/weather.jpeg" alt="Weather" />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm mt-5 mb-5">
+          <div class="card" style="width: 18rem">
+            <img src="../Projects/img/bonsai.jpg" alt="TreeLink" />
+            <div class="card-body">
+              <h5 class="card-title">TreeLink</h5>
+              <p class="card-text">
+                I created a LinkTree clone that displays a list of links to my social media profiles. 
+                This app was created using HTML, and CSS. One of the features I had trouble with was 
+                adding the blue background. It came from an image that had high resolution and the 
+                dimensions of the card were too large. I had to resize the image so the page would not 
+                lag upon loading.
+                            </p>
+              <a href="https://chaz-carothers.netlify.app" class="btn btn-primary row d-flex justify-content-center 
+              align-content-center">CLICK HERE</a>
+            </div>
+          </div>
         </div>
 
-        <div class="know-more">
-          <!-- Add the link of your project in href -->
-          <a href="../WEATHER API/index.html">CLICK HERE!</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm mt-5 mb-5">
+          <div class="card" style="width: 18rem">
+            <img src="../Projects/img/weather.jpeg" alt="Weather" />
+            <div class="card-body">
+              <h5 class="card-title">Weather API</h5>
+              <p class="card-text">
+                This is a weather app I created using the ___ API. I added
+                several other weather resources to provide extra information.
+              </p>
+              <a
+                href="../WEATHER API/index.html"
+                class="
+                  btn btn-primary
+                  row
+                  d-flex
+                  justify-content-center
+                  align-content-center
+                "
+                >CLICK HERE</a
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="title">Weather API</div>
-      </div>
+        <div class="col-sm mt-5 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="../Projects/img/Skeletorrr.png"
+              class="card- img-top"
+              alt="skeletor"
+            />
 
-      <!-- Card #2 -->
-      <div class="card">
-        <div class="card-image">
-          <!-- upload an image in /img/ folder and use it here -->
-          <img src="../Projects/img/drummer.jpeg" alt="Drummer" />
+            <div class="card-body">
+              <h5 class="card-title">Whack-A-Skeletor</h5>
+              <p class="card-text">
+                This is my version of a Whack-A-Mole game that I created using plain vanilla JavaScript. 
+                Skeletor is the mole, and the game has background music to the Price Is Right. Once the user 
+                is finished playing, Vincent Price's notorious laugh chimes in at the end.
+              
+              </p>
+              <a
+                href="https://pedantic-swartz-521f4d.netlify.app"
+                class="
+                  btn btn-primary
+                  row
+                  d-flex
+                  justify-content-center
+                  align-content-center
+                "
+                >CLICK HERE</a
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="know-more">
-          <!-- Add the official link of your project in href -->
-          <a href="../DrumKit/index.html">CLICK HERE!</a>
+        <div class="col-sm mt-5 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./img/badguys.png"
+              class="card- img-top"
+              alt="villain"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Disney Villain Page</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore.
+              </p>
+              <a
+                href="https://dizney.netlify.app"
+                class="
+                  btn btn-primary
+                  row
+                  d-flex
+                  justify-content-center
+                  align-content-center
+                "
+                >More Info</a
+              >
+            </div>
+          </div>
         </div>
 
-        <!-- change the content of title div according to project name -->
-        <div class="title">DRUM-KIT</div>
-      </div>
 
-      <div class="card">
-        <div class="card-image">
-          <!-- upload an image in /img/ folder and use it here -->
-          <img src="../Projects/img/Skeletorrr.png" alt="skeletor" />
+
+        <div class="col-sm mt-5 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./img/badguys.png"
+              class="card- img-top"
+              alt="villain"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Disney Villain Page</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore.
+              </p>
+              <a
+                href="https://gracious-pasteur-a86441.netlify.app"
+                class="
+                  btn btn-primary
+                  row
+                  d-flex
+                  justify-content-center
+                  align-content-center
+                "
+                >More Info</a
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="know-more">
-          <!-- Add the official link of your project in href -->
-          <a href="../Whack-A-Skeletor/index.html">CLICK HERE!</a>
-        </div>
-
-        <!-- change the content of title div according to project name -->
-        <div class="title">Whack-A-Skeletor</div>
-      </div>
-
+ 
       <!-- ============= Start your new card below this line =============== -->
       <div class="card">
         <div class="card-image">
@@ -114,6 +234,19 @@
         <!-- change the content of title div according to project name -->
         <div class="title">Memory Game</div>
       </div>
+    
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
